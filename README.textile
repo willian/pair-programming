@@ -1,0 +1,35 @@
+h1. Installing
+
+<pre>
+<code>
+git clone git://github.com/willian/pair-programming.git
+cd pair-programming
+
+1. Edit pair file and change default_name and default_email variables
+
+2. Copy files to your $PATH dir, like this:
+   sudo cp pair /usr/local/bin
+   sudo cp unpair /usr/local/bin
+
+3. Change file's permissions to executable:
+   sudo chmod +x /usr/local/bin/pair
+   sudo chmod +x /usr/local/bin/unpair
+</code>
+</pre>
+
+h1. Usage
+
+<pre>
+<code>
+pair Paul
+
+# This will add [user] entry in .git/config, like this:
+# [user]
+# 	name = Willian Fernandes & Paul
+# 	email = developers@company.com
+
+unpair
+
+# This will remove [user] entry
+</code>
+</pre>

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+default_name="Willian Fernandes"
+default_email="developers@company.com"
+
+if [ "$1" != "" ]; then
+  unpair
+  `git config --add user.name "$default_name & $*"`
+  `git config --add user.email "$default_email"`
+fi
